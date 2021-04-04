@@ -18,4 +18,4 @@ main = do
   start <- getCPUTime
   let r = fib 1000000000 
   end <- deepseq r getCPUTime
-  putStrLn (show (div (end - start) (10^12)))
+  putStrLn ("~ " ++ (show (div (end - start)(10^12))) ++ " seconds")
